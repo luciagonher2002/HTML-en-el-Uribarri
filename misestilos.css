@@ -1,0 +1,35 @@
+body { 
+	background-color: rgb(250, 219, 216); font-size: 12 } * {margin-left: 2%; margin-right: 2%; } 
+h1 { 
+	font-size: 50px;
+	text-align: center;
+	font-family: impact;
+	font-weight: bold;
+	color: white;
+	position: relative; 
+	background-color: rosybrown; }
+ 
+h2 {
+	text-align: center; 
+	border: 3px solid rosybrown;
+	font-weight: bold; 
+	color: rosybrown; 
+	position: relative; 
+	background-color: white; }
+.pestana { 
+		text-align: center;  
+		position: relative;  }
+h3 { 
+	font-weight: bold; 
+	color: black; 
+	position: relative; } 
+p { 
+	margin-left: 4%;
+ 	margin-right: 4%;
+	text-align: justify;
+	font-family: kalinga; }
+ul { 
+	margin-left: 4%;
+ 	margin-right: 4%;
+	text-align: justify;
+	font-family: kalinga; }
