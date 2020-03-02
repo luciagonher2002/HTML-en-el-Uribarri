@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML EN EL URIBARRI</title>
+		<link rel="stylesheet" href="misestilos.css" type="text/css" media="all">
+	</head>
+	<body style="background-color:rgb(250, 219, 216);">
+		<H1><b style="color:white;">··HTML EN EL URIBARRI··</b></H1>
+		<div>
+
+	
+		<h2>Aspectos b&aacute;sicos</h2>
+		
+		<div class="pestana">
+		<nav> <a href="pagina 0.html"> P&aacute;gina principal   |   <a href="pagina 1.html"> Tema 1 </a>   |  <a href="pagina 2.html"> Tema 2  </a> | <a href="pagina 3.html"> Temas 3 y 4 </a> | 
+		<a href="pagina 5.html"> Tema 5 </a> </nav>
+		</div>
+		<p>La creaci&oacute;n de una p&aacute;gina web comienza por la comprensi&oacute;n de sus elementos b&aacute;sicos, las etiquetas, y
+		de su dise&ntilde;o estructural. En este m&oacute;dulo analizaremos ambos conceptos y crearemos nuestros primeros
+		ejemplos.
+		Para comenzar a crear nuestras p&aacute;ginas web lo &uacute;nico que tendremos que hacer es ir componiendo las diferentes etiquetas
+		HTML dentro de un documento.</p>
+		<H3><u><p>Etiquetas HTML</p></u></H3>
+		<h4><p>Strong</p></h4>
+		<p>Una etiqueta HTML es un t&eacute;rmino rodeado por un signo de menor y otro de mayor; por ejemplo:
+		"strong"
+		Esta etiqueta indica que el texto que aparece a continuaci&oacute;n se debe destacar sobre el resto; normalmente se muestra en
+		negrita.
+		En muchos casos necesitaremos tambi&eacute;n una segunda etiqueta que delimite el final. As&iacute;, para que el texto deje de estar
+		destacado y contin&uacute;e normalmente, empleamos la misma etiqueta con una barra:
+		"/strong"
+		El conjunto de las dos etiquetas y el texto contenido en su interior conformar&iacute;an un elemento HTML.</p>
+		<h4><p>hr/</p></h4>
+		<p>Hace que en el documento aparezca una l&iacute;nea separando el texto anterior del siguiente. Como se puede observar, cuando un
+		elemento no va a tener una etiqueta de cierre (no existe un </hr>), el indicador de fin se a&ntilde;ade en la propia etiqueta inicial.
+		Nota: Todas las etiquetas HTML se escriben siempre en min&uacute;sculas. Si bien los navegadores son capaces de interpretar
+		las etiquetas en may&uacute;sculas, las normas de la W3C especifican que todas las etiquetas se debe escribir en min&uacute;sculas.
+		Otra caracter&iacute;stica importante de las etiquetas es que son anidables, por lo que podemos definir un p&aacute;rrafo y en su interior incuir una lista de elementos, im&aacute;genes, texto destacado, etc. empleando diferentes
+		etiquetas. Veremos muchos ejemplos al respecto.</p>
+		<h3><p>Par&aacute;metros de las etiquetas</p></h3>
+		<p>Muchas etiquetas HTML necesitan contar con par&aacute;metros para funcionar correctamente. &eacute;stos son modificadores que se
+		introducen entre los signos de apertura y cierre para definir alg&uacute;n matiz concreto del elemento HTML.
+		Por ejemplo, la etiqueta <b>img /</b> se emplea para insertar una imagen en la p&aacute;gina web, pero por si sola no funciona
+		correctamente. Necesita que le incorporemos un par&aacute;metro en el que indiquemos qu&eacute; imagen ser&aacute; la que se muestre.</p>
+		<p>Quedar&iacute;a as&iacute;:</p>
+		<p><b>img src=”fotodelgrupo.jpg” /</b></p>
+		<p>En el ejemplo siguiente, adem&aacute;s de indicar qu&eacute; imagen se mostrar&aacute;, establecemos el tama&ntilde;o que ocupar&aacute; en la pantalla:</p>
+		<p><b>img src=”fotodelaula5.jpg” width=”300px” height=”150px”/</b></p>
+		<p>Los par&aacute;metros se identifican por un t&eacute;rmino, seguido de un signo de igual y a continuaci&oacute;n, entre comillas, el valor que le
+		queramos asignar.</p>
+		<p>Nota: Aunque podemos usar comillas simples, normalmente se usan siempre comillas dobles para englobar el valor de
+		cada par&aacute;metro.</p>
+		<p>Ejemplo:</p>
+		<img src="Uribarri1.jpg" alt="Uribarri" width="250" height="166">
+		<H3><u><p>Estructura b&aacute;sica de una p&aacute;gina</p></u></H3>
+		<p>Las p&aacute;ginas web mantienen una estructura muy sencilla que debemos respetar, para que los navegadores sean capaces de
+		presentarla. No podemos comenzar nuestra p&aacute;gina con una etiqueta de p&aacute;rrafo, por ejemplo, sino que debemos indicar qu&eacute;
+		tipo de p&aacute;gina estamos generando, qu&eacute; informaci&oacute;n adicional llevar&aacute; y d&oacute;nde comienza el contenido que debe ser mostrado.
+		De este modo, cualquier p&aacute;gina web incluir&aacute; al menos las siguientes etiquetas:</p>
+		<p>"html" y "/html" colocadas al principio y fin del documento indican d&oacute;nde comienza y finaliza la p&aacute;gina web.</p>
+		<p>"head" y "/head" definen un espacio en el que incluiremos contenidos que no se van a mostrar directamente en el
+		navegador, sino que sirven para describir determinados aspectos del documento, como su t&iacute;tulo, autor, los estilos que
+		emplearemos, peque&ntilde;as funciones que se deben realizar, etc.</p>
+		<p>"body" y "/body" en su interior se incluye la informaci&oacute;n que se mostrar&aacute; en el navegador. Es el contenido real de
+		la p&aacute;gina, estructurado mediante las diferentes etiquetas.</p>
+		<p>Junto a las tres etiquetas anteriores podemos encontrar algunas m&aacute;s que son importantes para que la web se interprete
+		correctamente:</p>
+		<p>"!DOCTYPE" y "?xml" son dos etiquetas que indican qu&eacute; tipo de documento estamos generando y a qu&eacute; normas
+		se ajusta. Normalmente ser&aacute;n siempre iguales y ser&aacute; nuestro editor el que se encargue de colocarlas al principio de la
+		p&aacute;gina, cuando sea necesario.</p>
+		<img src="captura.jpg" alt="captura" width="490" height="200">
+		<H3><u><p>Texto</p></u></H3>
+		<h4><p>P&aacute;rrafos</p></h4>
+		<p>Las etiquetas "p" y "/p" se emplean para definir un bloque de texto que se comporta como un p&aacute;rrafo. Normalmente no
+		dejaremos nunca una porci&oacute;n de texto suelta por la p&aacute;gina web, sino que la rodearemos con esas etiquetas. El editor de texto
+		se encargar&aacute; de hacerlo por nosotros pero, si estamos usando otro tipo de editor, debemos asegurarnos de qu&eacute; sucede.</p>
+		<h4><p>T&iacute;tulos</p></h4>
+		<p>Las etiquetas "h1" y "/h1" se utilizan para definir un texto como t&iacute;tulo, indicando que es una cabecera (la h viene de header,
+		cabecera en ingl&eacute;s) que queremos destacar sobre el resto del texto. Junto a "h1" contamos con "h2", "h3" y as&iacute; hasta
+		"h6" para definir diferentes t&iacute;tulos, de mayor a menor importancia.</p>
+		<p>Una p&aacute;gina web bien dise&ntilde;ada contar&aacute; con estos encabezados para definir los distintos apartados del texto, con sus
+		diferentes niveles.</p>
+		<h4><p>Saltos de l&iacute;nea y l&iacute;neas separadoras</p></h4>
+		<p>Para complementar las opciones de separaci&oacute;n del texto, contamos con dos etiquetas m&aacute;s.</p>
+		<p>"br /" inserta un salto de l&iacute;nea en el texto. No genera un nuevo p&aacute;rrafo, sino que parte la l&iacute;nea en dos. Es un
+		elemento puntual, que no lleva etiqueta de cierre.</p>
+		<p>"hr /" inserta un salto de l&iacute;nea en el texto, pero mostrando una l&iacute;nea horizontal visible.</p>
+		<H3><u><p>Etiquetas de estructura</p></u></H3>
+		<p>En las p&aacute;ginas web actuales, normalmente no nos limitaremos a definir todo el texto de la p&aacute;gina exclusivamente con
+		etiquetas "hx" y "p", ya que se consigue una estructura demasiado general.</p>
+		<p>Los est&aacute;ndares actuales nos proporcionan un conjunto de elementos HTML para englobar los contenidos que se suelen
+		encontrar en una p&aacute;gina web. Cada uno de estos elementos est&aacute; pensado para contener diferentes elementos HTML, como
+		p&aacute;rrafos, im&aacute;genes, etc. Estas son sus etiquetas:</p>
+		<p>"header" y "/header": para definir un bloque de contenido que har&aacute; las veces de t&iacute;tulo de la p&aacute;ginaweb.</p>
+		<p>"footer" y "/footer": define el pie de p&aacute;gina de nuestra web.</p>
+		<p>"nav" y "/nav": donde incluiremos diferentes enlaces para que el usuario pueda desplazarse entre las partes de
+		nuestro sitio web.</p>
+		<p>"section" y "/section": para definir grandes secciones de nuestra p&aacute;gina.</p>
+		<p>"article" y "/article": marca los l&iacute;mites de un contenido espec&iacute;fico, como una entrada de un blog o un art&iacute;culo en
+		general.</p>
+		<p>"aside" y "/aside": se emplea para definir un contenido que est&aacute; relacionado con la p&aacute;gina, pero que se debe
+		considerar como separado del contenido principal.</p>
+		<p>Junto a estos elementos a&uacute;n contamos con algunos m&aacute;s como "hgroup" para cabeceras de secciones, "figure" para
+		contenidos multimedia, "time" para definir la fecha del contenido o "mark" para definir textos destacados para referencias;
+		todas estas etiquetas con sus respectivos cierres.</p>
+		<H3><u><p>La cabecera de la p&aacute;gina web</p></u></H3>
+		<p>Como recordaremos, cada p&aacute;gina web cuenta con un elemento "head" colocado antes del "body"</p>
+		<p>Esta cabecera general de la p&aacute;gina se emplea para incorporar contenidos que no se mostrar&aacute;n directamente, pero que tienen
+		una elevada influencia en el aspecto que tendr&aacute; la p&aacute;gina y en su comportamiento.</p>
+		<p>En su interior podemos a&ntilde;adir algunos de los siguientes elementos HTML:</p>
+		<p>"title" y "/title": se emplea para definir el t&iacute;tulo de la p&aacute;gina. Es imprescindible en HTML5, por lo que siempre
+		debemos a&ntilde;adirlo. Este es el t&iacute;tulo que se mostrar&aacute; en la barra de t&iacute;tulo del navegador, al hacer un marcador a la
+		p&aacute;gina o en los buscadores de Internet.</p>
+		<p>"link /": se utiliza para enlazar con recursos externos, generalmente hojas de estilo. Volveremos sobre ello m&aacute;s
+		adelante.</p>
+		<p>"style" y "/style": nos permite definir estilos espec&iacute;ficos para la p&aacute;gina actual. Se suele emplear en combinaci&oacute;n
+		con el anterior, por lo que los trataremos al llegar a las hojas de estilo.</p>
+		<p>"base /": define la URL base para el resto de los enlaces que incluyamos en la p&aacute;gina web. Se emplea en casos
+		muy concretos.</p>
+		<p>"script" y "/script": es otro importante elemento que se utiliza para englobar acciones en otros lenguajes,
+		generalmente Javascript, para conseguir que la p&aacute;gina web realice determinadas tareas. Estas son operaciones que
+		se ejecutan al acceder a la p&aacute;gina, aumentando su versatilidad.</p>
+		<H3><u><p>Resumen</p></u></H3>
+		<p>Hemos comenzado a conocer los elementos HTML, con sus etiquetas y sobre todo la estructura de una
+		p&aacute;gina web. La informaci&oacute;n sobre la p&aacute;gina se integra en el elemento head, mientras que el contenido
+		se inserta dentro del elemento body.</p>
+		<h4><p>Etiquetas fundamentales</p></h4>
+		<table border=1>
+
+		<tr>
+		<td><strong>Etiqueta</strong></td>
+		<td><strong>Funci&oacute;n</strong></td>
+		</tr>
+
+		<tr>
+		<td>p</td>
+		<td>p&aacute;rrafo</td>
+		</tr>
+
+		<tr>
+		<td>h1...h6</td>
+		<td>encabezados</td>
+		</tr>
+
+		<tr>
+		<td>hr</td>
+		<td>l&iacute;nea horizontal</td>
+		</tr>
+
+		<tr>
+		<td>header, footer, nav, section, article, figure, aside</td>
+		<td>aspectos estructurales</td>
+		</tr>
+
+		<tr>
+		<td>title</td>
+		<td>t&iacute;tulo</td>
+		</tr>
+
+		<tr>
+		<td>meta</td>
+		<td>informaci&oacute;n sobre la p&aacute;gina</td>
+		</tr>
+
+		<tr>
+		<td>style y link</td>
+		<td>para trabajr con hojas de estilo</td>
+		</tr>
+
+		<tr>
+		<td>script</td>
+		<td>para a&ntilde;adir acciones extra a la p&aacute;gina</td>
+
+		</table>
+		</div>
+		<div>
+		<br><a href="pagina 0.html">Volver a la p&aacute;gina principal</> 
